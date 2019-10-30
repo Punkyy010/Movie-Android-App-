@@ -1,0 +1,5 @@
+<root>
+    <item name='java.nio.Buffer'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

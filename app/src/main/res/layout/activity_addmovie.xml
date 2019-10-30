@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"
+    tools:context=".AddMovieActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTopPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvAddMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="@string/addmovie"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/etMovieName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_name"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/tvAddMovie"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/tvShortDes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Movie Description"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/etMovieName"
+            android:paddingTop="20dp" />
+
+            <RatingBar
+                android:id="@+id/rbAdd"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/tvShortDes"
+                android:numStars="5" />
+
+
+            <EditText
+                android:id="@+id/etMovieGenre"
+                android:layout_width="200dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbAdd"
+                android:layout_centerHorizontal="true"
+                android:hint="Movie Genre" />
+
+            <Button
+                android:id="@+id/loadimage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:layout_below="@id/etMovieGenre"
+                android:layout_centerHorizontal="true"
+                android:text="Load Image" />
+
+            <TextView
+                android:id="@+id/targeturi"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/loadimage"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/targetimage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/targeturi"/>
+
+            <EditText
+                android:id="@+id/etMovieActors"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Movie Actors"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/targetimage"/>
+
+            <EditText
+                android:id="@+id/etMovieYear"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="@string/movie_year"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/etMovieActors"/>
+
+        <Button
+            android:id="@+id/btnSubmitMovie"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etMovieYear"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>
